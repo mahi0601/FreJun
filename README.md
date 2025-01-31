@@ -32,7 +32,9 @@ This project is a **Railway Ticket Reservation API**, designed to manage railway
   {
     "name": "John Doe",
     "age": 65,
-    "gender": "Male"
+    "gender": "Male",
+    "hasChild": false,
+    "ticekt_id": 100
   }
   ```
 - Click **Send**
