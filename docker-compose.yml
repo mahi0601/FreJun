@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  railway-api:
+    build: .
+    container_name: railway-api
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_PATH=/app/src/database/railway.db
+    volumes:
+      - sqlite_data:/app/src/database
+    restart: always
+
+volumes:
+  sqlite_data:
