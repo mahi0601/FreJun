@@ -108,11 +108,16 @@ graph TD;
   D -- Yes --> E[Assign RAC Berth];
   D -- No --> F{Waiting List Available?};
   F -- Yes --> G[Assign Waiting List Spot];
-  F -- No --> H[Return "No Tickets Available"];
+  F -- No --> H[Return &quot;No Tickets Available];
 ```
 
 ---
 
+## **ScreenShots**
+![Logo](1.png)
+![Logo](2.png)
+![Logo](3.png)
+![Logo](4.png)
 ## **🛠️ Setup & Deployment**
 
 ### **1️⃣ Clone Repository**
