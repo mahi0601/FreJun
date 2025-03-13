@@ -1,16 +1,17 @@
-version: "3.8"
+version: "3.9"
 
 services:
-  railway-api:
-    build: .
-    container_name: railway-api
+  railway-app:
+    container_name: railway-reservation-app
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "3000:3000"
-    environment:
-      - DATABASE_PATH=/app/src/database/railway.db
     volumes:
-      - sqlite_data:/app/src/database
-    restart: always
-
-volumes:
-  sqlite_data:
+      - .:/app
+      - /app/node_modules
+    environment:
+      NODE_ENV: development
+    restart: unless-stopped
+    command: npm start
