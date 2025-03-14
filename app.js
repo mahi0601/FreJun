@@ -14,7 +14,7 @@ app.use(cors());
 app.use("/api/v1/tickets", ticketRoutes);
 
 
-app.get("/", (req, res) => {
+app.get("/", (_req, res) => {
     res.send("Welcome to the Railway Ticket Reservation API");
 });
 
